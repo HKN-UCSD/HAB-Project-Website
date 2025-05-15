@@ -6,6 +6,12 @@
   --foreground: #171717;
 }
 
+/* Add custom tailwind stuff here */
+@theme {
+  --color-primary: #0C596B; /* Midnight Blue */
+  --color-secondary: #0BD3D4; /* Light Blue (Bioluminescent Glow) */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

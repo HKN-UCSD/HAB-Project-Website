@@ -1,0 +1,27 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+environment.yml
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Local config
+.env
+
+# CSV/data files (if mounting in)
+*.csv
+
+# Frontend build artifacts
+frontend/
+package-lock.json
+package.json
+
+# Git and OS junk
+.git/
+*.log
+.DS_Store
+README.md

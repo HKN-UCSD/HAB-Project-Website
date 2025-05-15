@@ -8,9 +8,6 @@ import json
 import yaml
 import argparse
 
-from IPython.display import display, HTML
-display(HTML('<style>.container { width:90% !important; }</style>'))
-
 import warnings
 warnings.filterwarnings("ignore", 
     message="A worker stopped while some jobs were given to the executor.",
