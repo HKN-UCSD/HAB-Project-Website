@@ -6,6 +6,7 @@ serviceAccountKey.json
 /*.env.*
 **/.env
 **/.env.*
+gcp-env/
 
 # files
 /app/100_sample_baseline_models.csv

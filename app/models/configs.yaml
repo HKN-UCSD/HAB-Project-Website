@@ -1,4 +1,4 @@
-file_name: "data_w_gaps_and_wind.csv"
+file_name: /app/data_w_gaps_and_wind.csv
 parameters_path: "100_sample_baseline_models.csv"
 target: "Avg_Chloro"
 n: 300

@@ -26,4 +26,4 @@ RUN pip install --no-cache-dir git+https://github.com/SugiharaLab/pyEDM.git && \
     pip install --no-cache-dir -r requirements.txt
 
 # Set the entrypoint
-ENTRYPOINT ["python", "app/forecast.py"]
+ENTRYPOINT ["python", "app/forecast.py", "app/models/configs.yaml"]
