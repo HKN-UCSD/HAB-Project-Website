@@ -19,20 +19,21 @@ export default async function Home() {
 
 
   return (
-    <main className="min-h-screen h-auto bg-[url(/background.png)] bg-cover bg-no-repeat bg-fixed items-center">
+    <main className="min-h-screen h-auto bg-[url('https://storage.googleapis.com/my-frontend-bucket-459820/background.png')] bg-cover bg-no-repeat bg-fixed items-center">
       <Image
-          src="/hknlogo.svg"
-          className="pl-10 pt-8"
+          src="hknlogo.svg"
+          className="pl-10 pt-8 justify-center"
           alt="HKN Logo"
           width={180}
           height={50}
+          
       />
       <h1 className="text-4xl font-bold text-center text-secondary shadow">
         Projected Bioluminescence Forecasts
       </h1>
       <div className="flex flex-row mt-[3vh] justify-center">
         <Image
-          src="/location.svg"
+          src="location.svg"
           alt="Location Pin"
           width={25}
           height={25}
