@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Navbar from "../components/Navbar";
 import TopBar from "../components/TopBar";
 import Today from "../components/Today";
 import Graph from "../components/Graph";
@@ -8,13 +7,12 @@ export default async function Home() {
   // TODO: Fetch forecasts from backend
   //let forecasts = await getForecasts();
   let forecasts = [
-    { "day": "Sunday", "value": 760 },
-    { "day": "Monday", "value": 260 },
-    { "day": "Tuesday", "value": 10 },
-    { "day": "Wednesday", "value": 60 },
-    { "day": "Thursday", "value": 400 },
-    { "day": "Friday", "value": 560 },
-    { "day": "Saturday", "value": 920 }
+    { "day": "Monday", "Date": "5/26/2025", "CI": "80", "Likeliness": "Unlikely" },
+    { "day": "Thursday", "Date": "5/26/2025", "CI": "80", "Likeliness": "Unlikely" },
+    { "day": "Monday", "Date": "5/26/2025", "CI": "80", "Likeliness": "Unlikely" },
+    { "day": "Thursday", "Date": "5/26/2025", "CI": "80", "Likeliness": "Unlikely" },
+    { "day": "Monday", "Date": "5/26/2025", "CI": "80", "Likeliness": "Unlikely" },
+    { "day": "Thursday", "Date": "5/26/2025", "CI": "80", "Likeliness": "Unlikely" }
   ]
 
 
