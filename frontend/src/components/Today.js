@@ -1,13 +1,6 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import {
-    Bar,
-    XAxis,
-    BarChart,
-    LabelList,
-    ResponsiveContainer,
-  } from "recharts";
 
 /**
  * Droplet Icon
@@ -136,7 +129,7 @@ export default function Today({forecasts, className}) {
     return (
         <div className={className}>
             <div className="relative flex flex-row w-[80vw] md:w-[40vw] items-center bg-primary/40 text-white rounded-xl">
-                <Droplet predValue={forecast["value"]} className="w-[80px] h-[80px] absolute top-0 right-0 m-4"/>
+                <Droplet predValue={forecast["value"]} className="w-[230px] h-[230px] absolute top-0 right-0 m-4"/>
                 {/* Text Display */}
                 <div className="flex flex-col w-full items-start self-start p-6">
                     <div className="flex flex-col items-center mb-6">
@@ -150,25 +143,7 @@ export default function Today({forecasts, className}) {
                     </div>
                 </div>
 
-                {/* Bar Chart */}
-                <div className="flex flex-col w-full h-[40vh]">
-                    <ResponsiveContainer width="50%" height={220} className="absolute bottom-0 right-0">
-                        <BarChart
-                            data={chartData}
-                            margin={{ top: 15, right: 20, bottom: 10, left: 0 }}
-                            barCategoryGap="20%"
-                        >
-                            <Bar dataKey="value" fill="var(--color-secondary)">
-                                <LabelList
-                                    dataKey="value"
-                                    position="top"
-                                    style={{ fill: "white", fontSize: "12px" }}
-                                />
-                            </Bar>
-                            <XAxis dataKey="prediction" tick={{ fill: "white" }} interval={0} />
-                        </BarChart>
-                    </ResponsiveContainer>
-                </div>
+                
             </div>
         </div>
     );

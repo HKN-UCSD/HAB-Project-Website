@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 1024px) {
+  img[alt="HKN Logo"] {
+    display: block;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
